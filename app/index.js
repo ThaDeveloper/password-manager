@@ -1,5 +1,10 @@
-require('./css/main.css')
+require('bootstrap/dist/css/bootstrap.min.css');
+require('./css/main.css');
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-var element = document.createElement('h1');
-element.innerHTML = 'Hello  Code Genius';
-document.body.appendChild(element);
+import ManageAccounts from './ManageAccounts.js';
+ReactDOM.render(
+  <ManageAccounts />,
+  document.getElementById('app')
+);

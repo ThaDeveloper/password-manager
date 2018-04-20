@@ -16,7 +16,7 @@ module.exports = {
       port: 4040,
     },
     module:{
-        loaders:[
+        rules:[
             {
                 test:/\.css$/,
                 loaders:['style-loader','css-loader']
